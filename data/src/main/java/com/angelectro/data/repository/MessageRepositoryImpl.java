@@ -3,7 +3,7 @@ package com.angelectro.data.repository;
 
 import com.angelectro.data.mapper.MessageEntityToModelMapper;
 import com.angelectro.data.service.VtbService;
-import com.angelectro.domain.data.MessageModel;
+import com.angelectro.domain.model.MessageModel;
 import com.angelectro.domain.repository.MessageRepository;
 
 import java.util.List;

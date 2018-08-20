@@ -1,6 +1,6 @@
 package com.angelectro.domain.repository;
 
-import com.angelectro.domain.data.MessageModel;
+import com.angelectro.domain.model.MessageModel;
 
 import java.util.List;
 

@@ -29,10 +29,7 @@ public class AndroidUtils {
         resultIntent.putExtra(MessageActivity.KEY_CONTENT, body);
         resultIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
-        NotificationManager mNotificationManager =
-                (NotificationManager) activity.getSystemService(Context.NOTIFICATION_SERVICE);
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(activity)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(activity, CHANNEL_ID)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentText(body)
                 .setContentTitle(title)
@@ -48,7 +45,13 @@ public class AndroidUtils {
             CharSequence name = activity.getString(R.string.app_name);// The user-visible name of the channel.
             int importance = NotificationManager.IMPORTANCE_HIGH;
             NotificationChannel mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
-            mNotificationManager.createNotificationChannel(mChannel);
+
+            NotificationManager mNotificationManager = (NotificationManager) activity.getSystemService(Context.NOTIFICATION_SERVICE);
+
+            if (mNotificationManager != null) {
+                mNotificationManager.createNotificationChannel(mChannel);
+            }
+
             builder.setChannelId(CHANNEL_ID);
         }
 

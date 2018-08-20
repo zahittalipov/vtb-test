@@ -1,7 +1,7 @@
 package com.angelectro.data.mapper;
 
 import com.angelectro.data.entity.MessageEntity;
-import com.angelectro.domain.data.MessageModel;
+import com.angelectro.domain.model.MessageModel;
 
 import javax.inject.Inject;
 

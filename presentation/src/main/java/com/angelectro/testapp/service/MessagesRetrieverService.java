@@ -2,7 +2,7 @@ package com.angelectro.testapp.service;
 
 import android.content.Context;
 
-import com.angelectro.domain.data.MessageModel;
+import com.angelectro.domain.model.MessageModel;
 import com.angelectro.domain.repository.MessageRepository;
 import com.angelectro.testapp.MessageApp;
 import com.angelectro.testapp.utils.AndroidUtils;
@@ -22,7 +22,6 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import io.reactivex.Observable;
 import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;

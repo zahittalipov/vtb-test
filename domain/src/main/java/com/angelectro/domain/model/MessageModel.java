@@ -1,4 +1,4 @@
-package com.angelectro.domain.data;
+package com.angelectro.domain.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
