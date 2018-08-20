@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ВТБ тест</string>
+    <string name="text_service_started">Служба запущена</string>
+    <string name="text_error_on_service_start">Ошибка при запуске службы</string>
+</resources>
